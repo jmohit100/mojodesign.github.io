@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+.container{
+	height: 80vh;
+	position: relative;
+	/*background: red;*/
+	width: 5500px;
+	margin-top: 10vh;
+}
+.intro-slide{
+	margin-left: 100px;
+	height: 80vh;
+	position: relative;
+	/*margin-top: 10vh;*/
+	/*background: #fafafa;*/
+	font-family: 'Raleway', sans-serif;
+	display: inline-block;
+	width: 600px;
+	float: left;
+}
+
+p{
+	font-size: 12px;
+	color: #a7a7a7;
+	width: 250px;
+	/*position: absolute;*/
+	/*top: 0px;*/
+	line-height: 18px;
+}
+
+.site-title{
+	font-size: 62px;
+	color: black;
+	width: 250px;
+	font-weight: 100;
+	position: absolute;
+	top: 40%;
+}
+
+.social-media-link{
+	position: absolute;
+	bottom: 0px;
+}
+
+.social-media-link a{
+	color: black;
+	font-size: 12px;
+	text-decoration: underline;
+	margin-right: 30px;
+}
+
+.arrow-right{
+	position: absolute;
+	left: 500px;
+	top: 40vh;
+}
+
+.project-slide{
+	display: inline-block;
+	width: 300px;
+	/*background: #efefef;*/
+	height: 80vh;
+	float: left;
+	border-left: 1px solid #efefef;
+	position: relative;
+	padding-left: 10px;
+	box-sizing: border-box;
+	transition: 1s ease-in-out;
+	opacity: 0.6;
+}
+
+.project-number{
+	font-size: 90px;
+	color: #efefef;
+	position: absolute;
+	top: 0px;
+	line-height: 90px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	transition: 1s ease-in-out;
+}
+
+.project-details{
+	position: absolute;
+	top: 150px;
+}
+
+.project-name{
+	font-size: 20px;
+	color: black;
+	margin-bottom: 10px;
+	height: 80px;
+	width: 280px;
+}
+
+.tags{
+	font-size: 12px;
+	color: black;
+	margin-bottom: 20px;
+}
+
+.project-slide p{
+	margin-bottom: 20px;
+}
+.project-details img{
+	width: 280px;
+	transition: 1s ease-in-out;
+}
+
+.project-slide:hover{
+	width: 500px;
+	opacity: 1;
+}
+
+.project-slide:hover .project-details img{
+	width: 480px;
+}
+
+.project-slide:hover .project-number{
+	color:black;
+}
+
