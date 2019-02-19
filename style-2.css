@@ -1,43 +1,209 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,800');
 
 body{
-	background-color: #f0f0f0;
-	font-family: 'Raleway', sans-serif;
+	background-color: #f9faf5;
+	font-family: 'Muli', sans-serif;
+	margin-top: 50px;
 }
 .container{
-	width: 900px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 .grid{
 	text-align: center;
 }
 
+.grid a{
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 100px;
+}
+
 .proj-card{
-	width: 280px;
-	background: white;
-	border-radius: 4px;
+	width: 300px;
+	height: 550px;
+	background: #f9faf5;
+	border: 1px solid #d9d9d9;
+	border-radius: 6px;
+	overflow: none;
 	float: left;
-	min-height: 500px;
-	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-	margin-right: 30px;
-	text-align: left;
+	color: #333;
+	position: relative;
+	transition: box-shadow 0.2s ease-in-out;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+	box-sizing: border-box;
+	text-align: center;
 	overflow: hidden;
 }
 
-.no-margin-right{
-	margin-right: 0px;
+.proj-card:hover{
+	box-shadow: 0 16px 29px rgba(0,0,0,.2);
+	background: #333;
+	border: 1px solid rgba(0,0,0,0);
+	color: #f9faf5;
 }
 
-.proj-image img{
-	width : 280px;
-	margin-bottom: 10px;
-}
-
-.proj-name{
-	font-size: 24px;
+.proj-card .proj-number{
+	font-size: 7em;
 	font-weight: bold;
-	color: #333;
+	margin-bottom: 20px;
+	font-family: 'Oswald';
+	margin-top: 30px;
+	opacity: 0.1;
+}
+
+.proj-card:hover .proj-number{
+	color: #f9faf5;
+	opacity: 1;
+}
+
+.proj-card .proj-name{
+	font-size: 1.1em;
 	margin-bottom: 10px;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.5em;
+}
+
+.proj-card .proj-category{
+	margin-bottom: 30px;
+	font-size: 0.7em;
+	opacity: 0.7;
+	/*font-style: italic;*/
+}
+
+.proj-card .bottom-aligned{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.proj-card .bottom-aligned .small-dash{
+	width: 15px;
+	height: 2px;
+	background: #333;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.proj-card .proj-tags{
+	margin-bottom: 15px;
+}
+
+.proj-card .proj-tags span{
+	font-size: 0.6em;
+	margin-bottom: 20px;
+	background: #f9faf5;
+	padding: 3px 5px;
+	border-radius: 3px;
+	/*text-transform: uppercase;*/
+	color: #333;
+	border: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	width: 55px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-bottom: 15px;
+}
+
+.proj-card .bottom-aligned .proj-image{
+	height: 152px;
+	margin-bottom: -1px;
+	margin-left: -1px;
+}
+
+.proj-card .bottom-aligned .proj-image img{
+	width: 300px;
+	height: 152px;
+}
+
+.article-page .proj-card{
+	width: 100%;
+	height: auto;
+	background: #f9faf5;
+	border: 0px solid #d9d9d9;
+	border-radius: 0px;
+	overflow: none;
+	float: left;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 100px;
+	color: #333;
+	position: relative;
+	transition: box-shadow 0.2s ease-in-out;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+	box-sizing: border-box;
+	text-align: center;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.article-page .proj-card:hover{
+	box-shadow: none;
+}
+
+.article-page .proj-card .proj-number{
+	color: #333;
+	opacity: 1;
+}
+
+.article-page .proj-card .proj-name{
+	font-size: 1.8em;
+	font-weight: 800;
+	margin-top: 100px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+
+.left-sidebar{
+	width: 30vw;
+	position: fixed;
+	border-right: 1px solid #d9d9d9;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.right-side{
+	width: 70vw;
+	float: right;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.right-side p{
+	text-align: left;
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.5em;
+	fon
+}
+
+.right-side img{
+	max-width: 700px;
+	width: auto;
+	/*max-height: 300px;*/
+	height: auto;
+	background: #efefef;
+	border: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0px 15px 25px -5px rgba(201,201,201,1);
+	-moz-box-shadow: 0px 15px 25px -5px rgba(201,201,201,1);
+	box-shadow: 0px 15px 25px -5px rgba(201,201,201,1);
+	border-radius: 6px;
+	overflow: hidden;
 }
