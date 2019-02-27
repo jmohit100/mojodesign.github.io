@@ -5,10 +5,102 @@
 body{
 	background-color: #f9faf5;
 	font-family: 'Muli', sans-serif;
-	margin-top: 50px;
+	margin: 0px;
+}
+
+.navbar{
+	position: absolute;
+	height: 50px;
+	top: 0px;
+	width: 100%;
+	color: white;
+	z-index: 999;
+	font-weight: 400;
+}
+
+.mojo-logo{
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+
+.navbar .container{
+	position: relative;
+}
+
+.intro-section .container{
+	text-align: left;
+}
+
+.intro-section .container p{
+	text-align: left;
+	font-weight: 300;
+	line-height: 1.5em;
+	max-width: 500px;
+}
+
+.intro-section .container p u{
+	color: yellow;
+}
+
+.right-links{
+	position: absolute;
+	right: 0px;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.right-links .single-link{
+	display: inline-block;
+	float: left;
+	margin-left: 40px;
+	border-top: 1px solid transparent;
+	height: 48px;
+	vertical-align: middle;
+	line-height: 48px;
+}
+
+.right-links .single-link:hover{
+	color: yellow;
+	cursor: pointer;
+	border-top: 1px solid yellow;
+
+}
+
+#coverVideo{
+	position: absolute;
+	top: -250px;
+	right: 0px;
+	z-index: -1;
+	/*height: 100%;*/
+	width: 100%;
+	filter:blur(5px);
+	/*filter:sepia(100%);*/
+}
+
+.intro-section{
+	height: 100vh;
+	widows: 100vw;
+	background: rgba(0,0,0,0.8);
+	padding-top: 250px;
+	color: white;
+	box-sizing: border-box;
+}
+
+.intro-section span{
+	font-size: 72px;
+    background: yellow;
+    color: #333;
+    padding-right: 5px;
+    padding-bottom: 4px;
+    overflow: hidden;
+    line-height: 72px;
+    margin-top: 20px;
+    display: inline-block;
 }
 .container{
-	width: 100%;
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -22,6 +114,46 @@ body{
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-bottom: 100px;
+}
+
+.tools-known{
+	background: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	height: 700px;
+	box-sizing: border-box;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.tools-known .container{
+	text-align: left;
+}
+
+
+.tools-known .container h1{
+	text-align: left;
+	width: 500px;
+	margin-top: 120px;
+}
+
+
+.tools-known .container p{
+	text-align: left;
+	width: 500px;
+	line-height: 1.5em;
+}
+
+.tools-known .container p span{
+	background: yellow;
+}
+
+.design-tools{
+	right: 0px;
+	float: right;
+	top: 70px;
+	height: 500px;
+	position: absolute;
 }
 
 .proj-card{
@@ -142,8 +274,8 @@ body{
 	transition: 0.5s ease-in-out;
 	cursor: pointer;
 	box-sizing: border-box;
-	text-align: center;
-	border-bottom: 1px solid #d9d9d9;
+	text-align: left;
+	padding: 30px;
 }
 
 .article-page .proj-card:hover{
@@ -153,16 +285,27 @@ body{
 .article-page .proj-card .proj-number{
 	color: #333;
 	opacity: 1;
+	float: right;
+	margin: 0px;
+	opacity: 0.1;
+	position: absolute;
+	right: -10px;
+    top: 0px;
+    font-size: 10em;
 }
 
 .article-page .proj-card .proj-name{
 	font-size: 1.8em;
 	font-weight: 800;
-	margin-top: 100px;
-	width: 80%;
+	margin-top: 00px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
+}
+
+.article-page .proj-card .proj-tags{
+	margin-top: 30px;
 }
 
 .left-sidebar{
