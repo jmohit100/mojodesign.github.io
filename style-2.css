@@ -70,7 +70,7 @@ body{
 
 #coverVideo{
 	position: absolute;
-	top: -250px;
+	top: -150px;
 	right: 0px;
 	z-index: -1;
 	/*height: 100%;*/
