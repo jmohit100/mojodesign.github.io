@@ -78,7 +78,7 @@ body{
 
 .intro-section{
 	height: 100vh;
-	widows: 100vw;
+	/*width: 100%;*/
 	background: rgba(15, 98, 124, 0.8);
 	padding-top: 250px;
 	color: white;
@@ -102,6 +102,7 @@ body{
 	margin-right: auto;
 	text-align: center;
 }
+
 .grid{
 	text-align: center;
 }
@@ -313,4 +314,63 @@ body{
 	box-shadow: 0px 15px 25px -5px rgba(201,201,201,1);
 	border-radius: 6px;
 	overflow: hidden;
+}
+
+@media only screen and (max-width: 600px){
+	.container{
+		width: 100%;
+	}
+
+	.proj-card{
+	    width: 100%;
+		height: auto;
+		margin-bottom: 40px;
+	}
+
+	.proj-image{
+		height: 195px;
+	}
+
+	.proj-image img{
+		width: 100%;
+	}
+
+	.grid a{
+		margin:0px;
+	}
+
+	.proj-tags, .proj-name{
+		margin-left: 10px;
+	}
+
+	.tools-known .container p, .tools-known .container h1, .intro-section .container p{
+		width: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+		padding-bottom: 0px;
+	}
+
+	.design-tools{
+		display: none;
+	}
+
+	.mojo-logo{
+	    display: inline-block;
+	    margin-left: auto;
+	    width: 100%;
+	    margin-right: auto;
+	    margin-top: 20px;
+	}
+
+	.mojo-logo img{
+		height: 50px;
+	}
+
+	.intro-section .container{
+		text-align: center;
+	}
+
+	.intro-section{
+		padding-top: 100px;
+	}
 }
