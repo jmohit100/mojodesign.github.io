@@ -7,6 +7,9 @@ body{
 	font-family: 'Muli', sans-serif;
 	margin: 0px;
 }
+h1{
+
+}
 
 .navbar{
 	position: absolute;
@@ -83,6 +86,7 @@ body{
 	padding-top: 250px;
 	color: white;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 .intro-section span{
@@ -372,5 +376,6 @@ body{
 
 	.intro-section{
 		padding-top: 100px;
+		overflow: hidden;
 	}
 }
