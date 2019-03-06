@@ -257,3 +257,255 @@ ul li{
 }
 
 
+.projects-modal{
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	left: 0px;
+	top:0px;
+	box-sizing: border-box;
+	z-index: 999;
+	background: rgba(255,255,255,1);
+	background-image: url("images/bg.png");
+	overflow: scroll;
+	overflow-x: hidden;
+	padding-top: 15vh;
+	border-left: 1px solid rgba(0,0,0,0.5);
+	left: 100vw;
+	transition: left 1s ease-in-out;
+}
+
+.projects-modal-on-hover{
+	left: 0vw;
+}
+
+.projects-modal .container{
+	height: 85vh;
+}
+
+.projects-modal .proj-name{
+	font-size: 72px;
+	width: 480px;
+	line-height: 60px;
+}
+
+.projects-modal .proj-image{
+	width: 50vw;
+	position: absolute;
+	right: 0px;
+	left: 540px;
+	height: 365px;
+	box-shadow: 0px 10px 50px #4a7387;
+}
+
+.projects-modal p{
+	width: 480px;
+}
+
+.projects-modal .proj-image img{
+	width: 50vw;
+}
+
+.close-icon{
+	position: fixed;
+	margin-left: 50px;
+	top: 50px;
+	cursor: pointer;
+}
+
+.close-icon span{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 2px;
+    top: 48px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.close-icon:hover span{
+	opacity: 1;
+}
+
+.images-grid{
+	text-align: center;
+	background-image: url("images/bg.png");
+	position: absolute;
+	top: 100vh;
+}
+
+.images-grid .mobile-image{
+	width: 320px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.images-grid img{
+	width: 100%;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 70px;
+    border-radius: 4px;
+    box-shadow: 0px 10px 50px #4a7387;
+}
+
+.projects-modal .scroll-down-hint{
+	position: absolute;
+    bottom: 0px;
+    left: 49%;
+}
+
+body.on-modal-open{
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 600px){
+	.container{
+		width: 100%;
+	}
+
+	.home-page{
+		padding: 20px;
+		padding-top: 30px;
+		left: 0px;
+	}
+
+	.intro{
+		width: 100%; 
+    	margin-left: 0px; 
+    	padding:0px;
+    	font-size: 12px;
+    	line-height: 24px;
+    	letter-spacing: 0.5px;
+	}
+
+	.intro h1{
+		margin-bottom: 20px;
+	}
+
+	.vertical-line{
+		display: none;
+	}
+
+	.mojo-logo{
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.mojo-logo img{
+		width: 100px;
+	}
+
+	.video-div{
+		display: none;
+	}
+
+	.project-area{
+		height: 7300px;
+	}
+
+	.proj-card{
+		width: 100%;
+		margin:0px;
+		height: 300px;
+	}
+
+	.proj-image{
+		width: 100%;
+		height: 170px;
+	}
+
+	.proj-tags{
+		font-size: 10px;
+	}
+
+	.proj-tags span{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.proj-name{
+		font-size: 20px;
+	}
+
+
+	.tools-image img{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.projects-modal{
+		left: 100%;
+		width: 100%;
+	}
+
+	.scroll-down-hint{
+		display: none;
+	}
+
+	h1{
+		margin-bottom: 20px;
+	}
+
+	hr{
+		opacity: 0;
+	}
+
+	.proj-card:hover .proj-image{
+		box-shadow: 0px 0px 0px #4a7387;
+		width: 100%;
+		margin-left: 0px;
+		height: auto;
+	}
+
+	.projects-modal-on-hover{
+		left: 0%;
+	}
+
+	.projects-modal .proj-image{
+		display: none;
+	}
+
+	.projects-modal .scroll-down-hint{
+		display: none;
+	}
+
+	.projects-modal p{
+		width: 100%;
+	}
+
+	.projects-modal .proj-name{
+		width: 100%;
+		font-size: 36px;
+		line-height: 42px;
+	}
+
+	.close-icon{
+	    position: absolute;
+	    right: 30px;
+	    top: 30px;
+	}
+
+	.close-icon span{
+		display: none;
+	}
+
+	.close-icon img{
+		width: 30px;
+	}
+
+	.images-grid{
+		position: relative;
+		margin-top: 50px;
+		top: 0px;
+	}
+
+	.images-grid img{
+		box-shadow: 0px 2px 15px #4a7387;
+		margin-bottom: 30px;
+	}
+}
+
