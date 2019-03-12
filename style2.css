@@ -41,9 +41,9 @@ p{
 
 .home-page{
 	height: 100vh;
-	width: 100%;
+	width: 960px;
 	position: relative;
-	padding-top: 25vh;
+	padding-top: 20vh;
 	box-sizing: border-box;
 	position: fixed;
 	top: 0px;
@@ -58,7 +58,7 @@ p{
 	opacity: 0.8;
 }
 
-.line-1{top:0px; left: 260px;}
+.line-1{top:0px; right: 40px; height: 100px;}
 .line-2{left: 0px; bottom: 0px;}
 
 .video-div{
@@ -66,7 +66,7 @@ p{
 	height: 50vh;
 	position: fixed;
 	background: #efefef;
-	top:25vh;
+	top:20vh;
 	right: 0px;
 	overflow: hidden;
 	z-index: -999;
@@ -92,11 +92,11 @@ p{
 	font-family: arial;
 	color: black;
 	width: 480px;
-	margin-left: 260px;
+	margin-left: 0px;
 	padding-right: 20px;
-	background: white;
+	/*background: white;*/
 	z-index: 999;
-	background-image: url("images/bg.png");
+	/*background-image: url("images/bg.png");*/
 	line-height: 26px;
 	margin-top: -1px;
 }
@@ -110,11 +110,12 @@ p{
 }
 
 .scroll-down-hint{
-	position: absolute;
-	bottom: 10px;
-	left: -30px;
 	display: inline-block;
 	width: 20px;
+	position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .scroll-down-hint span{
@@ -129,6 +130,15 @@ p{
 
 .scroll-down-hint img{
 	margin-top: 50px;
+}
+
+.mojo-logo{
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	/*padding-bottom: 1px;*/
+	/*transform: translate(-50%, 0);*/
+	/*background-image: url("images/bg.png");*/
 }
 
 /*============ home-page end =============*/
@@ -420,6 +430,7 @@ body.on-modal-open{
 
 	.proj-tags{
 		font-size: 10px;
+		margin-bottom: 0px;
 	}
 
 	.proj-tags span{
@@ -481,6 +492,7 @@ body.on-modal-open{
 		width: 100%;
 		font-size: 36px;
 		line-height: 42px;
+		margin-top: 0px;
 	}
 
 	.close-icon{
