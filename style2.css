@@ -378,9 +378,14 @@ body.on-modal-open{
 	}
 
 	.home-page{
-		padding: 20px;
+		padding: 10px;
 		padding-top: 30px;
 		left: 0px;
+		width: 100%;
+		box-sizing: border-box;
+		position: relative;
+		height: auto;
+		margin-bottom: 50px;
 	}
 
 	.intro{
@@ -403,6 +408,9 @@ body.on-modal-open{
 	.mojo-logo{
 		text-align: center;
 		margin-bottom: 50px;
+		position: relative;
+		left: 0px;
+		top: 50px;
 	}
 
 	.mojo-logo img{
@@ -415,6 +423,7 @@ body.on-modal-open{
 
 	.project-area{
 		height: 7300px;
+		margin-top: 0px;
 	}
 
 	.proj-card{
